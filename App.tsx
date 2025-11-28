@@ -1078,19 +1078,26 @@ export default function App() {
             </div>
 
             <div className="flex-1 flex flex-col items-center justify-center p-8 z-10">
-            <div className="mb-8 p-4 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/10">
-                <Icons.FileText className="w-12 h-12 text-chrp-teal" />
-            </div>
-            <h1 className="text-4xl font-bold text-white mb-4 text-center">Chrp<span className="text-chrp-teal">Inspect</span></h1>
-            <p className="text-slate-300 text-center mb-12 max-w-sm text-lg">
+              <div className="landing-spinner mb-10">
+                <div className="orbit"></div>
+                <div className="orbit inner"></div>
+                <div className="scan-track"></div>
+                <div className="magnifier">
+                  <div className="glass">
+                    <Icons.Search className="w-6 h-6 text-chrp-dark" />
+                  </div>
+                </div>
+              </div>
+              <h1 className="text-4xl font-bold text-white mb-4 text-center">Chrp<span className="text-chrp-teal">Inspect</span></h1>
+              <p className="text-slate-300 text-center mb-12 max-w-sm text-lg">
                 AI-powered home inspections.
-            </p>
-            <button 
+              </p>
+              <button
                 onClick={() => setView(AppView.SETUP)}
                 className="w-full max-w-xs bg-chrp-teal hover:bg-teal-400 text-chrp-dark font-bold py-4 px-8 rounded-xl shadow-lg shadow-teal-500/20 transition-all transform hover:scale-105"
-            >
+              >
                 Start Inspection
-            </button>
+              </button>
             </div>
         </div>
       )}
