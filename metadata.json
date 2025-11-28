@@ -1,0 +1,7 @@
+{
+  "name": "Copy2 of ChrpInspect AI",
+  "description": "AI-powered home inspection assistant that generates custom checklists and manages visual inspections.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
